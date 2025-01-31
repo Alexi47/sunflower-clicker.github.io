@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <script src="event.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
     <title>Sunflower Clicker</title>
 </head>
-
 <body>
     <header>
         <nav>
@@ -20,20 +19,17 @@
         </nav>
     </header>
     <main>
-         <div class="container">
-                <p id="farming">Sunflower :</p>
-                <p id ="click">sunflower/click : <span id="counter">0</span></p><br><br>
-                <p id = "seconde">sunflower/sec : <span id="counterSec">0</span></p>
-             
-             
+        <div class="container">
+            <p id="farming">Sunflower :</p>
+            <p id="click">sunflower/click : <span id="counter">0</span></p><br><br>
+            <p id="seconde">sunflower/sec : <span id="counterSec">0</span></p>
             <div id="up">
-                <p>améliorations</p>
-                <button onclick="upgrade()"> +1 sunflower par click / $ = <span id="upgradeCost">0</span></button>
-                <button onclick="upgrade2()"> +1 sunflower par seconde / $ = <span id="upgradeCost2">0</span></button>
-             </div>
-    
-             <button onclick = "farmer()" id="farm"></button>
-         </div>
+                <p id="upgradeTitle">Améliorations</p>
+                <button onclick="upgrade()">+1 sunflower par click / $ = <span id="upgradeCost">0</span></button>
+                <button onclick="upgrade2()">+1 sunflower par seconde / $ = <span id="upgradeCost2">0</span></button>
+            </div>
+            <button onclick="farmer()" id="farm"></button>
+        </div>
     </main>
 </body>
 </html>
