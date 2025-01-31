@@ -2,12 +2,12 @@ let sunflowerCount = 1;
 let sunflower = 0;
 let upgradeCost = 10;
 let sunflowerPerSec = 0;
-let upgradeCostPersec = 100;
+let upgradeCostPerSec = 100;
 
 document.getElementById("counter").textContent = sunflowerCount;
 document.getElementById("farming").textContent = "Sunflower : " + sunflower;
 upgradeCost = document.getElementById("upgradeCost").textContent = upgradeCost;
-upgradeCostPersec = document.getElementById("upgradeCost2").innerHTML = upgradeCost;
+upgradeCostPerSec = document.getElementById("upgradeCost2").innerHTML = upgradeCostPerSec;
 
 
 
@@ -28,12 +28,12 @@ function upgrade() {
 }
 
 function upgrade2(){
-    if (sunflower >= upgradeCostPersec) {
-        sunflower -= upgradeCostPersec;
+    if (sunflower >= upgradeCostPerSec) {
+        sunflower -= upgradeCostPerSec;
         sunflowerPerSec++;
-        upgradeCostPersec = Math.ceil(upgradeCostPersec * 2.5);
+        upgradeCostPerSec = Math.ceil(upgradeCostPerSec * 1.5);
         document.getElementById("counterSec").innerHTML = sunflowerPerSec;
-        upgradeCostPersec = document.getElementById("upgradeCost2").innerHTML = upgradeCost;
+        upgradeCostPerSec = document.getElementById("upgradeCost2").innerHTML = upgradeCostPerSec;
 
 }
 }
