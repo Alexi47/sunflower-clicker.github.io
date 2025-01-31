@@ -1,0 +1,90 @@
+
+h1{
+    position: relative;
+    align-items: center;
+    margin: auto;
+    font-size: 2vmax;
+}
+
+#sun{
+    position: relative;
+    text-align: left;
+    font-size: 25px;   
+}
+
+
+
+nav{
+    width: 100%;
+    display:flex; 
+    align-items: center;
+}
+
+#stat{
+    font-size: 2vmax;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+#connexion{
+    font-size: 2vmax;
+    margin-right: 22px;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(10,1fr)
+}
+
+#farming {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    font-size: 2vmax;
+}
+
+#up{
+    grid-column-start: 8;
+    grid-column-end: 8; 
+    font-size: 2vmax;
+    
+}
+
+#farm{
+    position: absolute;
+    right: 1280px;
+    top: 300px;
+    width: 350px; 
+    height: 600px; 
+    border: none;
+    cursor: pointer;
+    background: url('sunflower.png') no-repeat center center;
+    background: size 12px;
+}
+
+body {
+    background-image: url(unnamed.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+}
+
+#click {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 6;
+    grid-column-end: 6;
+    font-size: 25px;
+}
+
+#seconde{
+    font-size: 25px;
+    grid-column-start: 6;
+    grid-column-end: 6;
+   
+
+}
+
+
+
+
+
